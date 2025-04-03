@@ -29,6 +29,7 @@
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MatthewPackage\matthewWork.py" />
     <Compile Include="MatthewPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>

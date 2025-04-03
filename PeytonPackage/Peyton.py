@@ -1,4 +1,4 @@
-# File Name : peytonWork.py
+# File Name : Peyton.py
 # Student Name: Peyton Bock
 # email:  bockps@mail.uc.edu
 # Assignment Number: Assignment 09 
@@ -7,8 +7,7 @@
 # Semester/Year:   Spring 2025
 # Brief Description of the assignment:  Running SQL in python
 # Brief Description of what this module does. Learn to runSQL in Python within a online database
-# Citations: 
-# https://www.w3schools.com/python/python_mysql_select.asp
+# Citations: https://www.w3schools.com/python/python_mysql_select.asp
 
 # Anything else that's relevant: N/A
 

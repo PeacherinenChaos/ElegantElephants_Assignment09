@@ -1,4 +1,4 @@
-# File Name : matthewWork.py
+# File Name : Matthew.py
 # Student Name: Matthew Boutros
 # email:  boutromw@mail.uc.edu
 # Assignment Number: Assignment 09 
@@ -7,7 +7,7 @@
 # Semester/Year:   Spring 2025
 # Brief Description of the assignment: Work with SQL Server and Python to analyze grocery data.
 # Brief Description of what this module does: Fetches product data, selects a random product, and calculates quantity sold.
-# Citations:
+# Citations: https://www.w3schools.com/python/python_mysql_select.asp
 # Anything else that's relevant: N/A
 
 import pyodbc

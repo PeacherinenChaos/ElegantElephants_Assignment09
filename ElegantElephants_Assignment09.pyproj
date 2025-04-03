@@ -29,11 +29,11 @@
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MatthewPackage\matthewWork.py" />
+    <Compile Include="MatthewPackage\Matthew.py" />
     <Compile Include="MatthewPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PeytonPackage\peytonWork.py">
+    <Compile Include="PeytonPackage\Peyton.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PeytonPackage\__init__.py">

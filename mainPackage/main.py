@@ -32,5 +32,9 @@ for row in cursor:
     print(row[3])  
     print(row[4]) 
 
-cursor.close()
-conn.close()
+Description = 'Sweet & Sour Chicken'
+ProductID = 483
+ManufacturerID = 39
+BrandID = 65
+
+

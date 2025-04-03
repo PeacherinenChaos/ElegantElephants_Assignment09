@@ -11,23 +11,26 @@
 
 
 
-from DatabasePackage.database import *
 
-import pyodbc 
+from DatabasePackage.database import DatabaseManagement  
+import pyodbc
 
 dbm = DatabaseManagement()
 
 conn = dbm.connect_to_database()
 
-
-cursor = dbm.submit_sql_to_server(conn, 'SELECT ProductID, [UPC-A ], Description, ManufacturerID, BrandID FROM tProduct')
+cursor = conn.cursor()  
+cursor.execute('SELECT ProductID, [UPC-A ], Description, ManufacturerID, BrandID FROM tProduct')
 
 total_enrollment = 0
-# Step through all the rows in the results set
-for row in cursor:
-    print(row);     # All columns in the row
-    print (row[1]); # Second column
-    print (row[2]); # Third column
-    print (row[3]); # Fourth column
-    total_enrollment = total_enrollment + int(row[2])   # running sum of enrollments
 
+for row in cursor:
+    print(row)  
+    print(row[0])  
+    print(row[1]) 
+    print(row[2])  
+    print(row[3])  
+    print(row[4]) 
+
+cursor.close()
+conn.close()

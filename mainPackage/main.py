@@ -10,31 +10,30 @@
 # Brief Description of what this module does. This sets up the initial query stuff
 
 
-
-
+from PeytonPackage.peytonWork import get_manufacturer_name, get_brand_name
 from DatabasePackage.database import DatabaseManagement  
 import pyodbc
 
 dbm = DatabaseManagement()
-
 conn = dbm.connect_to_database()
 
-cursor = conn.cursor()  
-cursor.execute('SELECT ProductID, [UPC-A ], Description, ManufacturerID, BrandID FROM tProduct')
+if conn:
+    Description = 'Sweet & Sour Chicken'
+    ProductID = 483
+    ManufacturerID = 39
+    BrandID = 65
 
-total_enrollment = 0
+    manufacturer_name = get_manufacturer_name(conn, ManufacturerID)
+    brand_name = get_brand_name(conn, BrandID)
 
-for row in cursor:
-    print(row)  
-    print(row[0])  
-    print(row[1]) 
-    print(row[2])  
-    print(row[3])  
-    print(row[4]) 
+    print(f"Description: {Description}")
+    print(f"ProductID: {ProductID}")
+    print(f"Manufacturer: {manufacturer_name}")
+    print(f"Brand: {brand_name}")
 
-Description = 'Sweet & Sour Chicken'
-ProductID = 483
-ManufacturerID = 39
-BrandID = 65
+    conn.close()
+else:
+    print("Database connection failed.")
+
 
 

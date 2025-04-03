@@ -32,6 +32,9 @@
     <Compile Include="MatthewPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PeytonPackage\peytonWork.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PeytonPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
